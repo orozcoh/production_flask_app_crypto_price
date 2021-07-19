@@ -1,3 +1,5 @@
+[This repo was made following this guide] (https://ianlondon.github.io/blog/deploy-flask-docker-nginx/)
+
 ---------Using python3 for development-------------
 
 1) Create virtual environment 
