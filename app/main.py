@@ -27,18 +27,18 @@ def build_html():
                     print("\nSomething went wrong while extracting prices from coingecko API\n")
 
     temp_html = " "
-    open('./templates/data.html', 'w').close()
+    #open('./templates/data.html', 'w').close()
     #time.strftime("%a %d %b %Y %H:%M:%S", time.localtime())
     temp_html += "<p>" + time.ctime()
-    print("\n\t<p>", time.ctime(), file=open('./templates/data.html', 'a'))
+    #print("\n\t<p>", time.ctime(), file=open('./templates/data.html', 'a'))
     temp_html += "<p>--------------------------------------------------------------------------------"
-    print("\n\n<p>--------------------------------------------------------------------------------", file=open('./templates/data.html', 'a'))
+    #print("\n\n<p>--------------------------------------------------------------------------------", file=open('./templates/data.html', 'a'))
     for i in range(len(cryptos)):
         temp_html += "<p> " + str.upper(cryptos[i]) + "  Price: " + str(actual_price[i]) + "  " + currency
-        print("\n\t<p> {:15s} {:10s} {:4.2f} \t {}".format(str.upper(cryptos[i]),"Price: ", actual_price[i], currency), end=" ", file=open('./templates/data.html', 'a')) 
+        #print("\n\t<p> {:15s} {:10s} {:4.2f} \t {}".format(str.upper(cryptos[i]),"Price: ", actual_price[i], currency), end=" ", file=open('./templates/data.html', 'a')) 
         #print("\t1H Change: ", percent, "%", end="")  
     temp_html += "<p>--------------------------------------------------------------------------------" 
-    print("\n\n<p>--------------------------------------------------------------------------------", file=open('./templates/data.html', 'a'))
+    #print("\n\n<p>--------------------------------------------------------------------------------", file=open('./templates/data.html', 'a'))
     return temp_html
 
 @app.route("/")
