@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: santodev/production_flask:release-v0.1
+    image: santodev/production_flask:release-v0.2
     expose:
       - port: 80
         as: 80
